@@ -13,3 +13,18 @@ D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.dll
 D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\ref\Flip1.dll
 D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.pdb
 D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.genruntimeconfig.cache
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\bin\Debug\net6.0\Flip1.exe
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\bin\Debug\net6.0\Flip1.deps.json
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\bin\Debug\net6.0\Flip1.runtimeconfig.json
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\bin\Debug\net6.0\Flip1.dll
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\bin\Debug\net6.0\ref\Flip1.dll
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\bin\Debug\net6.0\Flip1.pdb
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.csproj.AssemblyReference.cache
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.AssemblyInfoInputs.cache
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.AssemblyInfo.cs
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.dll
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\ref\Flip1.dll
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.pdb
+C:\Users\MSI\Source\Repos\FlipRepository\Flip1\Flip1\obj\Debug\net6.0\Flip1.genruntimeconfig.cache

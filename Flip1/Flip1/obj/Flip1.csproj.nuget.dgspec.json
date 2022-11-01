@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# learning\\Flip1\\Flip1\\Flip1.csproj": {}
+    "C:\\Users\\MSI\\Source\\Repos\\FlipRepository\\Flip1\\Flip1\\Flip1.csproj": {}
   },
   "projects": {
-    "D:\\C# learning\\Flip1\\Flip1\\Flip1.csproj": {
+    "C:\\Users\\MSI\\Source\\Repos\\FlipRepository\\Flip1\\Flip1\\Flip1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# learning\\Flip1\\Flip1\\Flip1.csproj",
+        "projectUniqueName": "C:\\Users\\MSI\\Source\\Repos\\FlipRepository\\Flip1\\Flip1\\Flip1.csproj",
         "projectName": "Flip1",
-        "projectPath": "D:\\C# learning\\Flip1\\Flip1\\Flip1.csproj",
+        "projectPath": "C:\\Users\\MSI\\Source\\Repos\\FlipRepository\\Flip1\\Flip1\\Flip1.csproj",
         "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-        "outputPath": "D:\\C# learning\\Flip1\\Flip1\\obj\\",
+        "outputPath": "C:\\Users\\MSI\\Source\\Repos\\FlipRepository\\Flip1\\Flip1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
