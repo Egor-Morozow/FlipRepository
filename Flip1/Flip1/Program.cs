@@ -8,7 +8,7 @@ static void PrintArray(int[] input)
     Console.WriteLine();
 }
 
-var task1Input = new int[] { 1, 5, 3, 8 };
+/*var task1Input = new int[] { 1, 5, 3, 8 };
 var result = SummingTask1(task1Input);
 Console.Write("TASK 1:\nInput:\n");
 PrintArray(task1Input);
@@ -27,17 +27,17 @@ var result3 = SummingTask3(task3Input);
 Console.Write("TASK 3:\nInput:\n");
 PrintArray(task3Input);
 Console.WriteLine("Result:");
-PrintArray(result3);
+PrintArray(result3);*/
 
-var task4Input = new int[] { 1, 5, 3, 8, 9, 10 };
-var result4 = SummingTask4(task4Input, 3);
+var task4Input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+var result4 = SummingTask4(task4Input, 4);
 Console.Write("TASK 4:\nInput:\n");
 PrintArray(task4Input);
 Console.WriteLine("Result:");
 PrintArray(result4);
 
-var task5Input = new int[] { 1, 5, 3, 8, 6, 7};
-var result5 = SummingTask5(task5Input, 3);
+/*var task5Input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8};
+var result5 = SummingTask5(task5Input, 2);
 Console.Write("TASK 5:\nInput:\n");
 PrintArray(task5Input);
 Console.WriteLine("Result:");
@@ -93,27 +93,36 @@ static int[] SummingTask3(int[] input)
        j--;
    }
    return result;
-}
+}*/
 
 static int[] SummingTask4(int[] input, int blockSize)
 {
     int[] result = new int[input.Length];
-    int n = 0;
-    int m = blockSize;
-    for (int i = blockSize; i < result.Length; i++)
+    int x = 0;
+    for (int i = input.Length; i > 0; i--)
     {
-        result[n] = input[i];
-        n++;
-    }
-    for (int j = 0; j < blockSize; j++)
-    {
-        result[m] = input[j];
-        m++;
+        if (i % blockSize == 0)
+        {
+            int startIndex = i - blockSize;
+            for (int w = x, q = 0; w < result.Length; w++) 
+            {
+                if (q < blockSize)
+                {
+                    result[w] = input[startIndex + q];
+                    q++;
+                }
+                if (q == blockSize)
+                {
+                    x = w + 1;
+                    break;
+                }
+            }
+        }
     }
     return result;
 }
 
-static int[] SummingTask5(int[] input, int width)
+/*static int[] SummingTask5(int[] input, int width)
 {
     int[] result = new int[input.Length];
     int n = 0;
@@ -173,4 +182,4 @@ static int[] SummingTask7(int[] input, int blockSize)
         m--;
     }
     return result;
-}
+}*/
