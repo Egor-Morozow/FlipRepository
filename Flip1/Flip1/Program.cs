@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.VisualBasic.CompilerServices;
+
 static void PrintArray(int[] input)
 {
     for (int i = 0; i < input.Length; i++)
@@ -29,29 +31,29 @@ PrintArray(task3Input);
 Console.WriteLine("Result:");
 PrintArray(result3);
 
-var task4Input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-var result4 = SummingTask4(task4Input, 3);
+var task4Input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+var result4 = SummingTask4(task4Input, 2);
 Console.Write("TASK 4:\nInput:\n");
 PrintArray(task4Input);
 Console.WriteLine("Result:");
 PrintArray(result4);
 
-var task5Input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+var task5Input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
 var result5 = SummingTask5(task5Input, 3);
 Console.Write("TASK 5:\nInput:\n");
 PrintArray(task5Input);
 Console.WriteLine("Result:");
 PrintArray(result5);
 
-var task6Input = new int[] { 1, 5, 3, 8, 9, 10};
+var task6Input = new int[] { 1, 5, 3, 8, 9, 10 };
 var result6 = SummingTask6(task6Input, 3);
 Console.Write("TASK 6:\nInput:\n");
 PrintArray(task6Input);
 Console.WriteLine("Result:");
 PrintArray(result6);
 
-var task7Input = new int[] { 1, 2, 3, 4, 5, 6};
-var result7 = SummingTask7(task7Input, 3);
+var task7Input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+var result7 = SummingTask7(task7Input, 2, 3);
 Console.Write("TASK 7:\nInput:\n");
 PrintArray(task7Input);
 Console.WriteLine("Result:");
@@ -129,25 +131,28 @@ static int[] SummingTask6(int[] input, int width)
         {
             for (int j = input.Length + width - 1; j >= input.Length; j--)
             {
-                result[i - width + j - input.Length ] = input[i - j - 1];
+                result[i - width + j - input.Length] = input[i - j - 1];
             }
         }
     }
     return result;
 }
 
-static int[] SummingTask7(int[] input, int blockSize)
+ static int[] SummingTask7(int[] input, int blockSize, int width)
 {
     int[] result = new int[input.Length * 2];
-    int blockCount = input.Length / blockSize;
-    for (int k = 0; k < input.Length; k++)
+    for (int num = 0; num < input.Length; num++)
     {
-        result[k] = input[k];
-        for (int nb = 0; nb < blockCount; nb++)
+        result[num] = input[num];
+        for (int i = input.Length; i < result.Length; i += width * blockSize)
         {
-            for (int i = input.Length; i < input.Length + blockSize; i++)
+            for (int j = 0; j < width; j++)
             {
-                result[result.Length - (nb + 1) * blockSize + i - input.Length] = input[nb * blockSize + i - input.Length];
+                for (int k = 0; k < blockSize; k++)
+                {
+                    result[width * blockSize - (j + 1) * blockSize + k + i] =
+                        input[j * blockSize + k + i - input.Length];
+                }
             }
         }
     }
